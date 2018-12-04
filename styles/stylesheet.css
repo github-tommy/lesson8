@@ -28,7 +28,7 @@ nav ul{
 nav li{
   float: left;
   margin: 1rem;
-  padding: .5rem 1rem 2rem 8rem;
+  padding: .5rem 1rem 2rem 10rem;
   font-size: 20px;
 }
 a:visited {
