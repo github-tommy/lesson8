@@ -23,7 +23,7 @@ h4{
 }
 .site-nav{
     width: 100%;
-    background-color: gray;
+    background-color:#444444;
   }
   .site-nav a{
     color: white;
@@ -50,7 +50,7 @@ h4{
   .site-nav ul.drop-down{
     display: none;
     min-width: 10rem;
-    background-color: lightgray;
+    background-color: #ecb722;
     top: 2.1rem;
     left: 0;
     position: absolute;
