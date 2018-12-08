@@ -7,11 +7,21 @@
 </head>
 <body>
     <div class="grid-container">
-    <div class="item1">
-        <nav>      
+    <div class="item1">>
+        <nav class="site-nav">      
             <ul>
-                <li><a href="our-trainers.html">Our Trainers</a></li>
+                <li><a href="our-trainers.html">Our Trainers</a>
+                <ul class="drop-down">
+                    <li><a href="our-trainers.html">Derek</a></li>
+                    <li><a href="our-trainers.html">Amy</a></li>
+                    <li><a href="our-trainers.html">Nathan</a></li>
+                    </ul>
                 <li><a href="our-services.html">Our Services</a></li>
+                <ul class="drop-down">
+                        <li><a href="our-services.html">A101</a></li>
+                        <li><a href="our-services.html">A102</a></li>
+                        <li><a href="our-services.html">A103</a></li>
+                        </ul>
                 <li><a href="about.html">About Point Archery School</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
@@ -23,14 +33,63 @@
         <h2>Email: archery-education@example.com</h2>
     </div>
     <div class="item2">
-        <h2>Remind Me Form</h2>
-        <p>Please remind my class schedule:</p>
-        <form action="/action_page.php">
-            First name: <input type="text" name="FirstName" value=" "><br>
-            Last name: <input type="text" name="LastName" value=" "><br>
-            Phone#: <input type="text" name="Phone#" value=" "><br>
-            Class date: <input type="text" name="Email" value=" "><br>
-            Class location: <input type="text" name="Questions" value="     "><br>
+        <form action="/action.php" method="get">
+            <h2>Remind Me Form</h2>
+            <label>First Name:
+                <input type="text" name="first-name" id="first-name">
+            </label>
+            <br>
+            <label>Last Name:
+                <input type="text" name="last-name" id="last-name">
+            </label>
+            <br>
+            <label>Phone#:
+                <input type="tel" name="rsrtel">
+            </label>
+            <br>
+            <label>Email:
+                <input type="email" name="user-email" required>
+            </label>
+            <br> 
+            <label>Class date:
+                <input type="date" name="class-date">
+            </label>
+            <br>
+            <br>
+            <label>Your Trainer:
+            <label>
+                <input type="radio" id="trainer-name" name="trainer-name" value="---" checked>---- 
+            </label>
+                <input type="radio" id="trainer-name" name="trainer-name" value="derek">Derek
+            </label>
+            <label>
+                <input type="radio" id="trainer-name" name="trainer-name" value="amy">Amy
+            </label>
+                <label>
+                <input type="radio" id="trainer-name" name="trainer-name" value="nathan">Nathan
+            </label>
+            <br>
+            <br>
+            <label>Your class location:
+                <select name="region">
+                <option value="--" selected >----</option>
+                <option value="seattle">Seattle</option>
+                <option value="kirkland">Kirkland</option>
+                <option value="bellevue">Bellevue</option>
+                </select>
+                </label>
+                <br>
+                <br>
+            <label>Level: Beginner to Advanced:
+                <br>
+            <input type="range" min="10" max="50" name="level">
+            </label>
+            <br>
+            <br>
+            <textarea name="message" rows="8" cols="22"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="submit" name="submit">
         </form> 
     </div>
     <div class="item3">

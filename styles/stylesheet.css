@@ -21,19 +21,56 @@ h4{
     font-size: 15px;
     font-family: arial bold;
 }
-
-nav ul{
+.site-nav{
+    width: 100%;
+    background-color: gray;
+  }
+  .site-nav a{
+    color: white;
+    text-decoration: none;
+  }
+  .site-nav ul{
     list-style-type: none;
-}
-nav li{
-  float: left;
-  margin: 1rem;
-  padding: .5rem 1rem 2rem 10rem;
-  font-size: 20px;
-}
-a:visited {
-    color: green;
-    }
+    padding-left: 0;
+  }
+  .site-nav a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .site-nav li{
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    padding: .5rem 3rem;
+  }
+  .site-nav li:hover{
+  background-color: black;
+  }
+  .site-nav ul.drop-down{
+    display: none;
+    min-width: 10rem;
+    background-color: lightgray;
+    top: 2.1rem;
+    left: 0;
+    position: absolute;
+  }
+  .site-nav >ul> li:hover ul.drop-down{
+    display: block;
+  }
+  .site-nav ul.drop-down li{
+   display: block;
+   width: 100%;
+   padding:.5rem 1rem;
+  }
+  
+  .site-nav ul.drop-down a{
+    color: black;
+  }
+  .site-nav ul.drop-down li:hover a{
+    color: white;
+  }
+
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
