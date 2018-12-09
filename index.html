@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Straight to the Point Archery School</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">  
 </head>
 <body>
     <div class="grid-container">
@@ -26,17 +27,27 @@
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
         </nav>
-        <h1>Straight to the Point Archery School <img src="img/picture1.jpg" alt="logo1" width="150" height="50">
-        </h1>   
+        <h1>Straight to the Point Archery School <img src="img/picture1.jpg" alt="logo1" width="150" height="50"></h1>   
         <h2>Address: 528 Tacoma Lane, Tacoma WA 98000</h2>
         <h2>Phone: 253-000-0000</h2>
         <h2>Email: archery-education@example.com</h2>
+       
+                <a href="img/picture1.jpg"><i class="fas fa-cloud"></i></a>
+                <a href="img/picture1.jpg"><i class="fas fa-address-book"></i></a>
+                <a href="img/picture1.jpg"><i class="fas fa-coffee"></i></a>
+                <a href="img/picture1.jpg"><i class="fas fa-envelope"></i></a>
+                <a href="img/picture1.jpg"><i class="fas fa-dollar-sign"></i></a>
+                <a href="img/picture1.jpg"><i class="fas fa-yin-yang"></i></a>
+            
     </div>
     <div class="item2">
         <form action="/action.php" method="get">
             <img src="img/picture2.jpg" alt="logo1" width="100" height="50">
             <br>
-            <h2>Remind Me Form</h2>
+            <br>
+            <fieldset>
+            <legend>Remind Me Form</legend>
+            <br>
             <label>
                 <input type="text" name="first-name" id="first-name" required placeholder="Enter your first name">
             </label>
@@ -54,24 +65,25 @@
             </label>
             <br> 
             <br>
-            <label><text-aligned: center>Class date:</text-aligned:>
+            <label>Class date:
                 <br>
                 <input type="date" name="class-date">
             </label>
             <br>
             <br>
-            <label>Your Trainer:
+            Your Trainer:
                 <br>
             <label>
-                <input type="radio" id="trainer-name" name="trainer-name" value="---" checked>---- 
-            </label>
-                <input type="radio" id="trainer-name" name="trainer-name" value="derek">Derek
+                <input type="radio" name="trainer" value="notsure" checked>Not sure
             </label>
             <label>
-                <input type="radio" id="trainer-name" name="trainer-name" value="amy">Amy
+                <input type="radio" name="trainer" value="derek">Derek
+            </label>
+            <label>
+                <input type="radio" name="trainer" value="amy">Amy
             </label>
                 <label>
-                <input type="radio" id="trainer-name" name="trainer-name" value="nathan">Nathan
+                <input type="radio" name="trainer" value="nathan">Nathan
             </label>
             <br>
             <br>
@@ -95,6 +107,7 @@
             <br>
             <br>
             <input type="submit" value="submit" name="submit">
+            </fieldset>
         </form> 
     </div>
     <div class="item3">
@@ -121,10 +134,13 @@
         <h3>Our Archery Motto: "Aim it Aim it Well"</h3>
     </div>
     <div class="item5">
-        <h3><a href="https://facebook.com/"><i class="fas fa-podcast"></i></a></h3>
         <h3>Service Excelence - Straight to the Point Archery School - "Aim it Aim it Well"</h3>  <img src="img/picture-footer.jpg" alt="logo2" width="1100" height="100">
         <img src="img/picture2.jpg" alt="logo1" width="200" height="100">
         <footer>Nondiscrimatory Policy: Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.</footer>
+        <details>
+                <summary>Copyright by tommybook@</summary>
+                This has been developed by tommybook@, in collaboration and under supervision of his mentor, Sheyna Watkins, UW.
+            </details>
     </div>
     
     </div>
