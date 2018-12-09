@@ -45,12 +45,12 @@ h4{
     padding: .5rem 3rem;
   }
   .site-nav li:hover{
-  background-color: black;
+    background-color: #444444;
   }
   .site-nav ul.drop-down{
     display: none;
     min-width: 10rem;
-    background-color: #ecb722;
+    background-color: #03a3df;
     top: 2.1rem;
     left: 0;
     position: absolute;
@@ -82,7 +82,6 @@ h4{
 }
 .item3{
     background-color: #03a3df;
-
 }
 .item2{
     background-color: #ecb722;
@@ -105,13 +104,11 @@ footer{
     'footer footer footer footer footer footer';
   grid-gap: 10px;
   padding: 10px;
- 
 }
 .grid-container > div {
   text-align: center;
   padding: 20px 0;
   font-size: 1rem;
-
 }
 .derek{
 	background-color: #03a3df;
@@ -121,4 +118,13 @@ footer{
 }
 .nathan{
     background-color: #03a3df;
+}
+input[type="submit"]:active{
+  border-color: white;
+}
+input:invalid{
+  background-color: white;
+}
+input:focus{
+  background-color: pink;
 }
