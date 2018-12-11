@@ -48,26 +48,29 @@
             <fieldset>
             <legend>Remind Me Form</legend>
             <br>
-            <label>
-                <input type="text" name="first-name" id="first-name" required placeholder="Enter your first name">
-            </label>
-            <br>
-            <label>
-                <input type="text" name="last-name" id="last-name" required placeholder="Enter your last name">
-            </label>
-            <br>
-            <label>
-                <input type="tel" name="rsrtel" placeholder="Enter your phone#">
-            </label>
-            <br>
-            <label>
-                <input type="email" name="user-email" required placeholder="Enter your first name">
-            </label>
+            <fieldset>
+                <legend>Your Details</legend>
+                <label>
+                        <input type="text" name="first-name" id="first-name" required placeholder="Enter your first name">
+                    </label>
+                    <br>
+                    <label>
+                        <input type="text" name="last-name" id="last-name" required placeholder="Enter your last name">
+                    </label>
+                    <br>
+                    <label>
+                        <input type="tel" name="rsrtel" placeholder="Enter your phone#">
+                    </label>
+                    <br>
+                    <label>
+                        <input type="email" name="user-email" required placeholder="Enter your first name">
+                    </label>
+            </fieldset>
             <br> 
             <br>
             <label>Class date:
                 <br>
-                <input type="date" name="class-date">
+                <input id="date" type="date" name="class-date">
             </label>
             <br>
             <br>
@@ -103,8 +106,14 @@
             </label>
             <br>
             <br>
+            <label>Comments</label>
+            <br>
             <textarea name="message" rows="8" cols="22"></textarea>
             <br>
+            <br>
+            <label>
+                <input type="checkbox" name="subscribe" checked="checked"/> Sign me up for email updates
+            </label>
             <br>
             <input type="submit" value="submit" name="submit">
             </fieldset>
